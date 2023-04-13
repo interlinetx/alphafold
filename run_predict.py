@@ -67,7 +67,7 @@ flags.DEFINE_integer('random_seed', None, 'The random seed for the data '
                      'that even if this is set, Alphafold may still not be '
                      'deterministic, because processes like GPU inference are '
                      'nondeterministic.')
-flags.DEFINE_integer('num_multimer_predictions_per_model', 5, 'How many '
+flags.DEFINE_integer('num_multimer_predictions_per_model', 1, 'How many '
                      'predictions (each with a different random seed) will be '
                      'generated per model. E.g. if this is 2 and there are 5 '
                      'models then there will be 10 predictions per input. '
